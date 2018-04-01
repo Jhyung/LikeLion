@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ldr">
+  <head>
+    <meta charset="utf-8">
+    <title>멋사</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+  <style>
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .wrap {
+      margin-left: 100px;
+    }
+
+    #id_1 {
+      background-color: blue;
+      width: 250px;
+      height: 250px;
+      margin-left: 40px;
+      margin-top: 40px;
+      padding-left: 20px;
+      padding-top: 20px;
+      float: left;
+    }
+
+    .class_1 {
+      background-color: magenta;
+      width: 250px;
+      height: 250px;
+      margin-left: 80px;
+      margin-top: 120px;
+      padding-left: 30px;
+      padding-top: 30px;
+      float: right;
+    }
+
+    .element1 {
+      background-color: orange;
+      position: relative;
+      left: 200px;
+      top: 150px;
+      width: 300px;
+      height: 300px;
+      z-index: 2;
+    }
+
+    .element2 {
+      background-color: green;
+      position: fixed;
+      left: 30px;
+      top: 20px;
+      width: 300px;
+      height: 300px;
+      z-index: -1;
+    }
+  </style>
+
+  <body>
+    <div class="wrap clearfix">
+      <div id="id_1">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+      </div>
+
+      <div id="id_1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+
+      <div class="class_1">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+      </div>
+
+      <div class="class_1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+
+      <p class="first">마<span>무</span>리</p>
+      <p class="first">Lorem ipsum <br>dolor sit amet, consectetur adipisicing elit. Quisquam, autem?</p>
+
+      <hr>
+      <img src="https://www.google.co.kr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google_logo">
+      <div>
+        <h1 id="second">h1크기</h1>
+        <h2>h2크기</h2>
+        <h3>h3크기</h3>
+        <h4>h4크기</h4>
+        <h5>h5크기</h5>
+        <h6>h6크기</h6>
+
+        <a href="http://www.google.com">구글</a>
+
+      </div>
+
+      <ul>
+        <li>정리안된리스트1</li>
+        <li>정리안된리스트2</li>
+      </ul>
+
+      <ol>
+        <li>정리된리스트1</li>
+        <li>정리된리스트2</li>
+      </ol>
+
+      <div class="third">
+        <p>마무리1</p>
+      </div>
+
+      <div class="fourth">
+        <p>마무리2</p>
+        <p>마무리3</p>
+      </div>
+
+      <div class="element1">
+        Hello World!
+      </div>
+    </div>
+    <div class="element2">
+      Helllo Hello WOrld!
+    </div>
+
+  </body>
+
+</html>

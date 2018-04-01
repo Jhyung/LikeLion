@@ -1,0 +1,21 @@
+span {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.first {
+  color: blue;
+  background-color: red;
+  background-image: url("https://www.google.co.kr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+  background-repeat: repeat;
+}
+
+#second {
+  color: green;
+}
+
+div.fourth p:nth-last-child(2) {
+  color: red;
+}
